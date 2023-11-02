@@ -193,7 +193,7 @@ header {
   font-weight: 600;
 }
 
-.techit-school-container > ul {
+.techit-school {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
@@ -201,12 +201,12 @@ header {
   margin-top: 40px;
 }
 
-.techit-school-container > ul > li {
+.techit-school > li {
   width: 290px;
   height: 416px;
 }
 
-.image-container {
+.techit-school > li > .image-container {
   margin-bottom: 16px;
   overflow: hidden;
   border-radius: 12px;
@@ -214,17 +214,17 @@ header {
   height: 221px;
 }
 
-.image-container > img {
+.techit-school > li > .image-container > img {
   width: 290px;
   height: 221px;
   transition: all 0.5s;
 }
 
-.image-container > img:hover {
+.techit-school > li > .image-container > img:hover {
   transform: scale(1.1);
 }
 
-.techit-school-container > ul > li > span {
+.techit-school > li > span {
   font-size: 14px;
   font-weight: 600;
   padding: 4px;
@@ -246,13 +246,13 @@ header {
   border: 1px solid #3f3f46;
 }
 
-.techit-school-container > ul > li > h3 {
+.techit-school > li > h3 {
   font-size: 20px;
   font-weight: 600;
   margin: 16px 0 8px 0;
 }
 
-.techit-school-container > ul > li > h5 {
+.techit-school > li > h5 {
   font-size: 18px;
 }
 
@@ -292,5 +292,215 @@ header {
 .techit-alarm-container > button {
   margin-top: 20px;
   font-size: 14px;
+  color: #737373;
+}
+
+.onboarding {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 40px;
+  justify-items: center;
+}
+
+.onboarding > li {
+  width: 398px;
+  height: 317px;
+}
+
+.onboarding > li > .image-container {
+  margin-bottom: 16px;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 398px;
+  height: 198px;
+}
+
+.onboarding > li > .image-container > img {
+  width: 398px;
+  height: 198px;
+  transition: all 0.5s;
+}
+
+.onboarding > li > .image-container > img:hover {
+  transform: scale(1.1);
+}
+
+.onboarding > li > h5 {
+  font-size: 14px;
+}
+
+.onboarding > li > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.onboarding > li > .price {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.onboarding > li > .price > span {
+  margin-left: 4px;
+  font-size: 14px;
+  color: #a3a3a3;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.onboarding > li > span {
+  color: #e67800;
+  background-color: #ffedd5;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.education > li {
+  width: 540px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 40px;
+  background-size: cover;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.education > .edu-techit {
+  background-image: url("./images/edu_kdt.png");
+}
+
+.education > .edu-onboarding {
+  background-image: url("./images/edu_onboarding.png");
+}
+
+.education > .edu-startup {
+  background-image: url("./images/edu_startup.png");
+}
+
+.education > li > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.education > li > h5 {
+  font-size: 16px;
+}
+
+.education > li > button {
+  color: #737373;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 32px 16px;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.sitemap > div {
+  display: flex;
+}
+
+.sitemap > div > div:last-of-type {
+  margin-left: 80px;
+}
+
+.sitemap > div > div > h5 {
+  font-size: 12px;
+  color: #737373;
+}
+
+.sitemap > div > div > ul {
+  margin-top: 16px;
+}
+
+.sitemap > div > div > ul > li {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.sitemap > div > div > ul > li > svg {
+  width: 24px;
+  margin-left: 4px;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  background-color: pink;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-info {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 16px;
+  font-size: 12px;
+}
+
+.company-info > ul {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.conditions {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #737373;
+}
+
+.conditions > span {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #737373;
+  border-radius: 99px;
+  margin: 0 8px;
+}
+
+.likelion {
+  margin-top: 12px;
+  display: flex;
+  color: #737373;
+}
+
+.likelion > span::after {
+  content: "|";
+  margin: 0 8px;
+  font-size: 10px;
+}
+
+.address {
+  margin-top: 4px;
   color: #737373;
 }
